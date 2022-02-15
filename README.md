@@ -21,7 +21,7 @@ If you need help with setting up the boilerplate or have other questions - don't
 💿 Install all dependencies:
 
 ```sh
-cd ethereum-react-native-boilerplate
+cd coinbase-clone-starter
 yarn install
 
 cd ios
