@@ -259,6 +259,8 @@ PODS:
     - React-jsi (= 0.63.4)
   - RNCAsyncStorage (1.13.4):
     - React-Core
+  - RNCClipboard (1.5.1):
+    - React-Core
   - RNGestureHandler (1.10.3):
     - React-Core
   - RNOS (1.2.6):
@@ -336,6 +338,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCClipboard (from `../node_modules/@react-native-community/clipboard`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNOS (from `../node_modules/react-native-os`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
@@ -413,6 +416,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNCClipboard:
+    :path: "../node_modules/@react-native-community/clipboard"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNOS:
@@ -462,6 +467,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   RNCAsyncStorage: 44539979e1f234262d64d3ce86ec21cceb1b2c5e
+  RNCClipboard: 41d8d918092ae8e676f18adada19104fa3e68495
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNOS: 6f2f9a70895bbbfbdad7196abd952e7b01d45027
   RNReanimated: e5040efc7c90da0b190a6525fcfc7e1e75973b21

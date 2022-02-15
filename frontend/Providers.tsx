@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {MoralisProvider} from 'react-moralis';
 import Moralis from 'moralis/react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -9,6 +9,7 @@ import WalletConnectProvider, {
 import {Platform} from 'react-native';
 //import Qrcode from "./Qrcode";
 //import { expo } from "../app.json";
+import {UserContext} from './UserContext';
 import {MoralisDappProvider} from './providers/MoralisDappProvider/MoralisDappProvider';
 import {ApplicationProvider, Layout, Text} from '@ui-kitten/components';
 import * as eva from '@eva-design/eva';
@@ -54,15 +55,18 @@ const walletConnectOptions: WalletConnectProviderProps = {
 };
 
 export const Providers = ({children}: ProvidersProps) => {
+  const [value, setValue] = useState();
   return (
     <WalletConnectProvider {...walletConnectOptions}>
       <MoralisProvider
-        appId={appId}
-        serverUrl={serverUrl}
+        appId={'YsdUIDEwgmMUHft7KEYbeMoaHIELhbzUHVUADWBA'}
+        serverUrl={'https://cp3vjnhntsoz.usemoralis.com:2053/server'}
         environment={environment}>
         <MoralisDappProvider>
           <ApplicationProvider {...eva} theme={eva.light}>
+          <UserContext.Provider value={{value, setValue}}>
             {children}
+          </UserContext.Provider>
           </ApplicationProvider>
         </MoralisDappProvider>
       </MoralisProvider>
